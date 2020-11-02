@@ -1,4 +1,58 @@
-p {
+p, h1, h3, h2, h4, h5 {
 	color: $dark-font;
 	// background-color: $background-wh;
+}
+.banner {
+	background-size: cover;
+	object-fit: cover;
+	height: 30rem;
+	width: 100% !important;
+  background-position: center;
+  padding: 150px 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.banner > h1 {
+  font-family: $headers-font;
+	font-size: 5em;
+	text-align: center;
+	color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  animation-name: moveInUp;
+  animation-duration: 2s;
+}
+.banner > h3 {
+	text-align: center;
+	color: white;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  animation-name: moveInDown;
+  animation-duration: 2s;
+}
+
+@keyframes moveInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	80% {
+	    transform: translateY(5px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate(0);
+	}
+}
+@keyframes moveInDown {
+	0% {
+	opacity: 0;
+	transform: translateY(30px);
+	}
+	80% {
+	    transform: translateY(5px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate(0);
+	}
 }
