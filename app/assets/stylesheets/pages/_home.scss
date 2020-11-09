@@ -14,4 +14,25 @@ body {
 .creations > p {
 	font-size: 1.2em;
 	font-weight: 200;
+	max-width: 50%;
+}
+.products {
+	background-image: url(tarte-fraise.jpg);
+  height: 30em;
+  background-size: cover;
+  width: 100% !important;
+  background-position: center;
+  margin-bottom: 2em;
+}
+.products-presentation {
+	background-color: white;
+	max-width: 50%;
+	h3 {
+		font-family: $headers-font;
+		font-size: 4em;
+	}
+	p {
+		font-size: 1.2em;
+		font-weight: 200;
+	}
 }
