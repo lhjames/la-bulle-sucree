@@ -1,5 +1,11 @@
 .carousel {
-		max-width: 50%;
+	max-width: 50%;
+}
+@media only screen and (min-width : 321px) and (max-width: 620px) {
+/* Styles */
+	.carousel {
+		max-width: 100%;
+	}
 }
 .carousel-inner {
 	border-radius: 10px;
